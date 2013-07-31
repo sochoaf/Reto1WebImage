@@ -1,0 +1,98 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Custom Styles-->
+        <link rel="stylesheet" type="text/css" href="PaginaPrincipal.css"/>
+        <!-- Bootstrap-->
+  
+        <!-- JQuery -->
+        <script src="http://code.jquery.com/jquery-1.9.0.min.js" type="text/javascript"></script>
+        <!-- Custom Libraries -->
+        <script type="text/javascript" src="PaginaPrincipal.js"></script>
+    </head>
+    <body>
+        <div id="pageWrapper">
+            
+            <div id="header-wrapper">
+                <div id="header" class="container">
+                    <div id="titulo" >
+                        <h1>WebImage - Reto 1 Telemática</h1>
+                    </div>  
+                </div>
+            </div>
+            
+            <div id ="container">
+                <div id="botones">
+                    <input type="button" value ="Ingresar" id="inicio">
+                    <input type="button" value="Registrarse" id ="registro">
+                </div>
+
+                <section id="registrarse">
+                    <div>
+                        <h1>Registrarse</h1>
+                    </div>
+
+                    <div>
+                        Usuario: <input type="text" id ="usuarioRegistro">
+                    </div>
+                    <div>
+                        Clave: <input type ="password" id="claveRegistro">
+                    </div>
+                    <div>
+                        <input type="button" value="Registrarse" id ="botonRegistro">
+                    </div>
+                </section>
+
+
+                <section id="iniciarSesion">
+                    <div>
+                        <h1>Iniciar Sesión</h1>
+                    </div>
+
+                    <div>
+                        Usuario: <input type="text" id ="usuarioInicio">
+                    </div>
+                    <div>
+                        Clave: <input type ="password" id="claveInicio">
+                    </div>
+
+                    <div>
+                        <input type="button" value="Ingresar" id ="botonInicio">
+                    </div>
+                </section>
+
+                <br> 
+
+                <section id ="subirImagen">
+                    <center>
+                        <h2>Subir Imagen</h2>
+                        <form enctype="multipart/form-data" action="../Logica/SubirImagen.php" method="POST">                 
+
+                            Escoger la imagen a subir: <input name="imagenUsuario" type="file" accept="image/*" />
+                            <input type="submit" value="Subir Imagen" id ="botonSubirImagen"/>
+                        </form>
+                    </center>
+                </section>
+                
+                <br>
+                <center>
+                    <h2>Filtrar las imágenes por fecha de carga:</h2>
+                    <select id="listaFiltro" name="listaFiltro">
+                    </select>
+                </center>
+                <br>
+                <center>
+                    <h2>Imágenes subidas a WebImage</h2>                                       
+                    <section id="listaImagenes">
+                        <!-- list  --></section>                        
+                </center>    
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+/* 
+    Document   : Index
+    Created on : 26/07/2013, 06:20:44 PM
+    Author     : Juan Rivillas
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#pageWrapper{
+    width: 980px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+body {
+	background: url(../imagenes/fondo.jpg) repeat;
+	font-family: 'Comics Sans', sans-serif;
+	font-size: 10pt;
+	color: #000;
+}
+
+#header-wrapper
+{
+	overflow: hidden;
+	height: 200px;
+        margin-top: 10px; 
+	margin-bottom: 20px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#titulo {
+	float: right;
+	width: 200px;
+	height: 80px;
+}
+
+#container {
+        width: 800px;
+	margin: 0px auto;
+        background: rgba(100, 2 , 2 , 0.4);
+        color: #FFFFFF;
+        position: relative;
+}
+
+#botones{
+    text-align: right;   
+}
+
+#registrarse {
+    display: none;
+    margin: 0px auto;
+    width: 200px;
+}
+
+#iniciarSesion {
+    display: none;
+    margin: 0px auto;
+    width: 200px;
+}
+
+#subirImagen {
+    display: none;
+    margin: 0px auto;
+}
+
+#idk{
+    display: none;
+}
+
+.imageDownload{
+    position: relative;
+}
